@@ -16,9 +16,9 @@
     <link rel="stylesheet" href="/css/output.css" />
     <title>Template 4</title>
   </head>
-  <body>
+  <body class="bg-white min-h-screen">
     <!------------------------Header---------------------------------->
-    <header id="nav-bar" class="fixed w-full py-10 z-[2]">
+    <header id="nav-bar" class="fixed w-full py-5 z-[2] bg-primary shadow-xl">
       <div class="my-container">
         <div class="flex justify-between items-center">
           <!-- ------------------brand/logo----------------- -->
@@ -68,7 +68,9 @@
                 >Contact</a
               >
             </li>
-            <a href="" class="my-btn xl:ml-8">Get Started</a>
+            <button href="" class="my-btn xl:ml-8 border border-gray-200">
+              Get Started
+            </button>
           </ul>
           <i
             id="menuBtn"
@@ -84,28 +86,30 @@
     <main>
       <!-- --------------Hero Section ------------------------------ -->
       <!-- Slider main container -->
-      <div id="home" class="swiper w-full h-[85vh] sm:h-screen">
+      <section id="home" class="swiper w-full h-[85vh]">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
           <div
-            class="swiper-slide relative bg-[url('/images/hero-img1.jpg')] bg-cover"
+            class="swiper-slide relative bg-[url('/images/hero-img1.jpg')] bg-cover bg-center"
           >
             <div class="absolute inset-0 bg-neutral-800 opacity-70"></div>
             <div class="absolute inset-0">
               <div class="my-container relative w-full h-full">
                 <div
-                  class="absolute w-4/5 sm:w-3/5 text-center top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2"
+                  class="absolute lg:w-1/2 sm:w-3/5 top-1/2 -translate-y-1/2"
                 >
                   <h1
-                    class="text-white text-3xl md:text-5xl uppercase font-semibold mb-5"
+                    class="text-white text-3xl md:text-6xl font-semibold mb-5"
                   >
                     Hello World Section 1
                   </h1>
-                  <p class="text-white text-sm md:text-base mb-5">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Est, necessitatibus fuga saepe sit atque omnis tempore
-                    dolores harum non iusto.
+                  <p
+                    class="text-white text-sm md:text-base lg:text-lg mb-5 leading-7"
+                  >
+                    Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor
+                    sit amet, consectetur adipisicing elit. Sapiente quaerat ut
+                    sed ea fugiat sit! adipisicing elit.
                   </p>
                   <button class="my-btn">Get Started</button>
                 </div>
@@ -119,17 +123,19 @@
             <div class="absolute inset-0">
               <div class="my-container relative w-full h-full">
                 <div
-                  class="absolute w-4/5 sm:w-3/5 text-center top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2"
+                  class="absolute lg:w-1/2 sm:w-3/5 top-1/2 -translate-y-1/2"
                 >
                   <h1
-                    class="text-white text-3xl md:text-5xl uppercase font-semibold mb-5"
+                    class="text-white text-3xl md:text-6xl font-semibold mb-5"
                   >
                     Hello World Section 2
                   </h1>
-                  <p class="text-white text-sm md:text-base mb-5">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Est, necessitatibus fuga saepe sit atque omnis tempore
-                    dolores harum non iusto.
+                  <p
+                    class="text-white text-sm md:text-base lg:text-lg mb-5 leading-7"
+                  >
+                    Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor
+                    sit amet, consectetur adipisicing elit. Sapiente quaerat ut
+                    sed ea fugiat sit! adipisicing elit.
                   </p>
                   <button class="my-btn">Get Started</button>
                 </div>
@@ -143,17 +149,19 @@
             <div class="absolute inset-0">
               <div class="my-container relative w-full h-full">
                 <div
-                  class="absolute w-4/5 sm:w-3/5 text-center top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2"
+                  class="absolute lg:w-1/2 sm:w-3/5 top-1/2 -translate-y-1/2"
                 >
                   <h1
-                    class="text-white text-3xl md:text-5xl uppercase font-semibold mb-5"
+                    class="text-white text-3xl md:text-6xl font-semibold mb-5"
                   >
                     Hello World Section 3
                   </h1>
-                  <p class="text-white text-sm md:text-base mb-5">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Est, necessitatibus fuga saepe sit atque omnis tempore
-                    dolores harum non iusto.
+                  <p
+                    class="text-white text-sm md:text-base lg:text-lg mb-5 leading-7"
+                  >
+                    Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor
+                    sit amet, consectetur adipisicing elit. Sapiente quaerat ut
+                    sed ea fugiat sit! adipisicing elit.
                   </p>
                   <button class="my-btn">Get Started</button>
                 </div>
@@ -161,25 +169,101 @@
             </div>
           </div>
         </div>
-        <!-- If we need pagination -->
+        <!-- swiper js pagination -->
         <div class="swiper-pagination text-white"></div>
-
-        <!-- If we need navigation buttons -->
-        <div
+        <!-- swiper js navigation buttons -->
+        <!-- <div
           class="swiper-button-prev text-white md:ml-5 hidden md:block"
         ></div>
         <div
           class="swiper-button-next text-white md:mr-5 hidden md:block"
-        ></div>
-
-        <!-- If we need scrollbar -->
+        ></div> -->
+        <!-- swiper js scrollbar -->
         <div class="swiper-scrollbar"></div>
-      </div>
-
+      </section>
       <!-- -------------------End of hero section-------------------------- -->
 
-      <!-- -------------------Start of hero section------------------------ -->
-      <section id="about"></section>
+      <!-- -------------------Start of about section------------------------ -->
+      <section id="about" class="w-full relative py-20">
+        <div class="my-container">
+          <div class="w-1/2 pr-10">
+            <!-- about section header -->
+            <div class="mb-8">
+              <h2
+                class="text-4xl text-white uppercase font-bold mb-5 after:block after:mt-2 after:w-10 after:h-1 after:bg-cyan-600"
+              >
+                About Us
+              </h2>
+              <p class="text-base leading-6 text-white italic">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Blanditiis tenetur molestias.
+              </p>
+            </div>
+            <!--end of about section header -->
+
+            <p class="mb-8 text-white leading-6">
+              <strong>Lorem ipsum dolor</strong> sit amet consectetur
+              adipisicing elit. Maiores reiciendis ipsa, eaque quisquam
+              voluptatem error cum esse tempore adipisci. Quae, aliquid. Est
+              pariatur, nobis sunt delectus laboriosam nemo fuga sint
+              consectetur.
+            </p>
+            <ul class="mb-1">
+              <li class="flex gap-x-4 mb-7">
+                <i class="fa fa-bookmark text-6xl text-primary"></i>
+                <div>
+                  <h5 class="text-lg uppercase font-bold mb-2 text-white">
+                    History
+                  </h5>
+                  <p class="text-sm text-white">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Officiis laboriosam soluta debitis cum consequatur natus.
+                  </p>
+                </div>
+              </li>
+              <li class="flex gap-x-4 mb-7">
+                <i class="fa fa-bookmark text-6xl text-primary"></i>
+                <div>
+                  <h5 class="text-lg uppercase font-bold mb-2 text-white">
+                    Vision
+                  </h5>
+                  <p class="text-sm text-white">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Officiis laboriosam soluta debitis cum consequatur natus.
+                  </p>
+                </div>
+              </li>
+              <li class="flex gap-x-4 mb-7">
+                <i class="fa fa-bookmark text-6xl text-primary"></i>
+                <div>
+                  <h5 class="text-lg uppercase font-bold mb-2 text-white">
+                    Mission
+                  </h5>
+                  <p class="text-sm text-white">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Officiis laboriosam soluta debitis cum consequatur natus.
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <p class="text-white leading-6 mb-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Exercitationem, quam! Amet blanditiis cumque eveniet ducimus
+              minus? Odit, sapiente necessitatibus! Minus!
+            </p>
+            <button class="my-btn">Learn More</button>
+          </div>
+        </div>
+        <div
+          class="absolute top-0 left-0 bottom-0 w-1/2 bg-gradient-to-br from-primary to-secondary -z-[2]"
+        ></div>
+        <div
+          class="absolute top-0 right-0 bottom-0 w-1/2 bg-[url('/images/gadget2.jpg')] bg-cover bg-center"
+        ></div>
+      </section>
+      <!-- ------------------End of About section-------------- ------------------->
+
+      <section id="services" class="py-20"></section>
     </main>
 
     <!---Plugins and plugin config-->

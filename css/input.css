@@ -9,9 +9,13 @@ html {
 }
 
 .my-container {
-  @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
 }
 
 .my-btn {
-  @apply inline-flex items-center justify-center px-4 py-2 text-[12px] uppercase font-semibold leading-6 text-white bg-cyan-600 border border-gray-200 rounded-md shadow-sm hover:bg-cyan-700 focus:outline-none focus:shadow-none;
+  @apply inline-flex items-center justify-center px-4 py-2 text-[12px] uppercase font-semibold leading-6 text-white bg-primary rounded-md shadow-sm focus:outline-none focus:shadow-none;
+}
+
+.swiper-scrollbar-drag {
+  @apply bg-primary;
 }
