@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/plugins/css/aos.css" />
+    <link rel="stylesheet" href="/plugins/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/css/output.css" />
+    <title>Template 4</title>
+  </head>
+  <body>
+    <!------------------------Header---------------------------------->
+    <header id="nav-bar" class="fixed w-full py-10 z-[2]">
+      <div class="my-container">
+        <div class="flex justify-between items-center">
+          <!-- ------------------brand/logo----------------- -->
+          <a
+            href="#_"
+            class="text-white text-xl md:text-2xl font-semibold uppercase"
+          >
+            Hello world
+          </a>
+          <!-- ----------------nav links--------------- -->
+          <ul class="hidden lg:flex justify-center items-center gap-x-5">
+            <li class="">
+              <a href="#home" class="text-white text-sm uppercase font-semibold"
+                >Home</a
+              >
+            </li>
+            <li class="">
+              <a
+                href="#about"
+                class="text-white text-sm uppercase font-semibold"
+                >About</a
+              >
+            </li>
+            <li class="">
+              <a
+                href="#services"
+                class="text-white text-sm uppercase font-semibold"
+                >Services</a
+              >
+            </li>
+            <li class="">
+              <a
+                href="#portfolio"
+                class="text-white text-sm uppercase font-semibold"
+                >Portfolio</a
+              >
+            </li>
+            <li class="">
+              <a href="#team" class="text-white text-sm uppercase font-semibold"
+                >Team</a
+              >
+            </li>
+            <li class="">
+              <a
+                href="#contact"
+                class="text-white text-sm uppercase font-semibold"
+                >Contact</a
+              >
+            </li>
+            <a href="" class="my-btn xl:ml-8">Get Started</a>
+          </ul>
+          <i
+            id="menuBtn"
+            class="lg:hidden fas fa-bars text-white text-2xl cursor-pointer"
+          ></i>
+        </div>
+      </div>
+    </header>
+    <!-- -----------------End of Header ----------------------------->
+
+    <!-- -------------------Main---------------------------------- -->
+
+    <main>
+      <!-- --------------Hero Section ------------------------------ -->
+      <!-- Slider main container -->
+      <div id="home" class="swiper w-full h-[85vh] sm:h-screen">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div
+            class="swiper-slide relative bg-[url('/images/hero-img1.jpg')] bg-cover"
+          >
+            <div class="absolute inset-0 bg-neutral-800 opacity-70"></div>
+            <div class="absolute inset-0">
+              <div class="my-container relative w-full h-full">
+                <div
+                  class="absolute w-4/5 sm:w-3/5 text-center top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2"
+                >
+                  <h1
+                    class="text-white text-3xl md:text-5xl uppercase font-semibold mb-5"
+                  >
+                    Hello World Section 1
+                  </h1>
+                  <p class="text-white text-sm md:text-base mb-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Est, necessitatibus fuga saepe sit atque omnis tempore
+                    dolores harum non iusto.
+                  </p>
+                  <button class="my-btn">Get Started</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="swiper-slide relative bg-[url('/images/hero-img2.jpg')] bg-cover"
+          >
+            <div class="absolute inset-0 bg-neutral-800 opacity-70"></div>
+            <div class="absolute inset-0">
+              <div class="my-container relative w-full h-full">
+                <div
+                  class="absolute w-4/5 sm:w-3/5 text-center top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2"
+                >
+                  <h1
+                    class="text-white text-3xl md:text-5xl uppercase font-semibold mb-5"
+                  >
+                    Hello World Section 2
+                  </h1>
+                  <p class="text-white text-sm md:text-base mb-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Est, necessitatibus fuga saepe sit atque omnis tempore
+                    dolores harum non iusto.
+                  </p>
+                  <button class="my-btn">Get Started</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="swiper-slide relative bg-[url('/images/hero-img3.jpg')] bg-cover"
+          >
+            <div class="absolute inset-0 bg-neutral-800 opacity-70"></div>
+            <div class="absolute inset-0">
+              <div class="my-container relative w-full h-full">
+                <div
+                  class="absolute w-4/5 sm:w-3/5 text-center top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2"
+                >
+                  <h1
+                    class="text-white text-3xl md:text-5xl uppercase font-semibold mb-5"
+                  >
+                    Hello World Section 3
+                  </h1>
+                  <p class="text-white text-sm md:text-base mb-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Est, necessitatibus fuga saepe sit atque omnis tempore
+                    dolores harum non iusto.
+                  </p>
+                  <button class="my-btn">Get Started</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination text-white"></div>
+
+        <!-- If we need navigation buttons -->
+        <div
+          class="swiper-button-prev text-white md:ml-5 hidden md:block"
+        ></div>
+        <div
+          class="swiper-button-next text-white md:mr-5 hidden md:block"
+        ></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </main>
+
+    <!---Plugins and plugin config-->
+    <script src="/plugins/js/aos.js"></script>
+    <script src="/plugins/js/swiper-bundle.min.js"></script>
+    <script src="/plugins/js/isotope.pkgd.min.js"></script>
+    <script src="/js/pluginsConfig.js"></script>
+  </body>
+</html>

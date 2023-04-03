@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+.my-container {
+  @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.my-btn {
+  @apply inline-flex items-center justify-center px-4 py-2 text-[12px] uppercase font-semibold leading-6 text-white bg-cyan-600 border border-gray-200 rounded-md shadow-sm hover:bg-cyan-700 focus:outline-none focus:shadow-none;
+}
