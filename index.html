@@ -184,9 +184,20 @@
       <!-- -------------------End of hero section-------------------------- -->
 
       <!-- -------------------Start of about section------------------------ -->
-      <section id="about" class="w-full relative py-20">
+      <section
+        id="about"
+        class="block w-full relative bg-gradient-to-b from-primary to-secondary"
+      >
+        <div class="md:flex h-fit lg:h-0">
+          <div
+            class="lg:absolute lg:top-0 lg:right-0 md:w-1/2 h-[40vh] md:h-[25vh] lg:h-1/2 bg-[url('/images/gadget1.jpg')] bg-cover bg-center"
+          ></div>
+          <div
+            class="lg:absolute lg:right-0 lg:bottom-0 md:w-1/2 h-[40vh] md:h-[25vh] lg:h-1/2 bg-[url('/images/gadget2.jpg')] bg-cover bg-center"
+          ></div>
+        </div>
         <div class="my-container">
-          <div class="w-1/2 pr-10">
+          <div class="w-full lg:w-1/2 lg:pr-10 py-20">
             <!-- about section header -->
             <div class="mb-8">
               <h2
@@ -194,14 +205,14 @@
               >
                 About Us
               </h2>
-              <p class="text-base leading-6 text-white italic">
+              <p class="text-sm lg:text-base leading-6 text-white italic">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Blanditiis tenetur molestias.
               </p>
             </div>
             <!--end of about section header -->
 
-            <p class="mb-8 text-white leading-6">
+            <p class="text-sm lg:text-base mb-8 text-white leading-6">
               <strong>Lorem ipsum dolor</strong> sit amet consectetur
               adipisicing elit. Maiores reiciendis ipsa, eaque quisquam
               voluptatem error cum esse tempore adipisci. Quae, aliquid. Est
@@ -246,7 +257,7 @@
                 </div>
               </li>
             </ul>
-            <p class="text-white leading-6 mb-5">
+            <p class="text-sm lg:text-base text-white leading-6 mb-5">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Exercitationem, quam! Amet blanditiis cumque eveniet ducimus
               minus? Odit, sapiente necessitatibus! Minus!
@@ -254,12 +265,9 @@
             <button class="my-btn">Learn More</button>
           </div>
         </div>
-        <div
+        <!-- <div
           class="absolute top-0 left-0 bottom-0 w-1/2 bg-gradient-to-br from-primary to-secondary -z-[2]"
-        ></div>
-        <div
-          class="absolute top-0 right-0 bottom-0 w-1/2 bg-[url('/images/gadget2.jpg')] bg-cover bg-center"
-        ></div>
+        ></div> -->
       </section>
       <!-- ------------------End of About section-------------- ------------------->
 
