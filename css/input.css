@@ -7,8 +7,6 @@
 html {
   font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
-  scroll-behavior: smooth; /* For Safari */
-  scroll-behavior: cubic-bezier(0.83, 0.2, 0.71, 0.06);
 }
 
 .my-container {
@@ -16,7 +14,7 @@ html {
 }
 
 .my-btn {
-  @apply inline-flex items-center justify-center px-4 py-2 text-[12px] uppercase font-semibold leading-6 text-white bg-primary rounded-md shadow-sm focus:outline-none focus:shadow-none;
+  @apply inline-flex items-center justify-center px-4 py-2 text-[12px] uppercase font-semibold leading-6 text-white bg-primary rounded-md shadow-sm focus:outline-none focus:shadow-none cursor-pointer;
 }
 
 .swiper-scrollbar-drag {

@@ -5,16 +5,16 @@ AOS.init({
 });
 
 // Isotope configuration ---------------------------------/*
-// var iso = new Isotope(".isotope-items", {
-//   itemSelector: ".item",
-//   layoutMode: "masonry",
-// });
+const portfolioContainer = document.querySelector(".portfolio-container");
+var iso = new Isotope(portfolioContainer, {
+  itemSelector: ".portfolio-item",
+});
 
-// var filtersElem = document.querySelector(".filters-button-group");
-// filtersElem.addEventListener("click", function (event) {
-//   var filterValue = event.target.getAttribute("data-filter");
-//   iso.arrange({ filter: filterValue });
-// });
+var portfolioFilters = document.getElementById("portfolio-filters");
+portfolioFilters.addEventListener("click", function (event) {
+  event.preventDefault();
+  iso.arrange({ filter: event.target.getAttribute("data-filter") });
+});
 
 // swiper configuration ---------------------------------/*
 const swiper = new Swiper(".swiper", {
