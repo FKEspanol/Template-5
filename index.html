@@ -18,7 +18,7 @@
   </head>
   <body class="bg-white min-h-screen">
     <!------------------------Header---------------------------------->
-    <header id="nav-bar" class="fixed w-full py-5 z-[2] bg-primary shadow-xl">
+    <header id="navbar" class="fixed w-full py-5 z-[2] bg-primary shadow-xl">
       <div class="my-container">
         <div class="flex justify-between items-center">
           <!-- ------------------brand/logo----------------- -->
@@ -30,41 +30,45 @@
           </a>
           <!-- ----------------nav links--------------- -->
           <ul class="hidden lg:flex justify-center items-center gap-x-5">
-            <li class="">
-              <a href="#home" class="text-white text-sm uppercase font-semibold"
+            <li>
+              <a
+                href="#home"
+                class="nav-link text-white text-sm uppercase font-semibold"
                 >Home</a
               >
             </li>
-            <li class="">
+            <li>
               <a
                 href="#about"
-                class="text-white text-sm uppercase font-semibold"
+                class="nav-link text-white text-sm uppercase font-semibold"
                 >About</a
               >
             </li>
-            <li class="">
+            <li>
               <a
                 href="#services"
-                class="text-white text-sm uppercase font-semibold"
+                class="nav-link text-white text-sm uppercase font-semibold"
                 >Services</a
               >
             </li>
-            <li class="">
+            <li>
               <a
                 href="#portfolio"
-                class="text-white text-sm uppercase font-semibold"
+                class="nav-link text-white text-sm uppercase font-semibold"
                 >Portfolio</a
               >
             </li>
-            <li class="">
-              <a href="#team" class="text-white text-sm uppercase font-semibold"
+            <li>
+              <a
+                href="#team"
+                class="nav-link text-white text-sm uppercase font-semibold"
                 >Team</a
               >
             </li>
-            <li class="">
+            <li>
               <a
                 href="#contact"
-                class="text-white text-sm uppercase font-semibold"
+                class="nav-link text-white text-sm uppercase font-semibold"
                 >Contact</a
               >
             </li>
@@ -191,7 +195,7 @@
         <div class="my-container pt-6 lg:pt-0 2xl:relative">
           <!-- about side image -->
           <div
-            class="block h-[50vh] w-full bg-[url('/images/gadget1.jpg')] bg-cover bg-center lg:absolute lg:top-0 lg:right-0 lg:w-1/2 lg:h-full 2xl:mr-8"
+            class="block h-[50vh] w-full bg-[url('/images/gadget2.jpg')] bg-cover bg-center lg:absolute lg:top-0 lg:right-0 lg:w-1/2 lg:h-full 2xl:mr-8"
           ></div>
           <div class="w-full lg:w-1/2 lg:pr-10 py-20">
             <!-- about section header -->
@@ -369,8 +373,66 @@
           </div>
         </div>
       </section>
+      <!-- -------------------------------End of about section ---------------------->
+
+      <!-- --------------------------------Start of portfolio section------------ -->
+
+      <section id="portfolio" class="py-20">
+        <div class="my-container">
+          <div class="mb-8">
+            <h2
+              class="text-4xl uppercase font-bold mb-5 after:block after:mt-2 after:w-10 after:h-1 after:bg-cyan-600"
+            >
+              Portfolio
+            </h2>
+            <p class="text-sm lg:text-base leading-6 italic">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis tenetur molestias.
+            </p>
+          </div>
+          <div class="flex justify-center sm:justify-start mb-8">
+            <ul id="portfolio-filters">
+              <li class="my-btn" data-filter="*">All</li>
+              <li class="my-btn" data-filter=".filter-app">App</li>
+              <li class="my-btn" data-filter=".filter-card">Card</li>
+              <li class="my-btn" data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+
+          <div class="flex flex-wrap portfolio-container">
+            <div class="sm:w-1/2 lg:w-4/12 p-2 portfolio-item filter-app">
+              <img src="/images/portfolio-1.jpg" alt="" class="w-full" />
+            </div>
+            <div class="sm:w-1/2 lg:w-4/12 p-2 portfolio-item filter-web">
+              <img src="/images/portfolio-2.jpg" alt="" class="w-full" />
+            </div>
+            <div class="sm:w-1/2 lg:w-4/12 p-2 portfolio-item filter-card">
+              <img src="/images/portfolio-3.jpg" alt="" class="w-full" />
+            </div>
+            <div class="sm:w-1/2 lg:w-4/12 p-2 portfolio-item filter-web">
+              <img src="/images/portfolio-4.jpg" alt="" class="w-full" />
+            </div>
+            <div class="sm:w-1/2 lg:w-4/12 p-2 portfolio-item filter-card">
+              <img src="/images/portfolio-5.jpg" alt="" class="w-full" />
+            </div>
+            <div class="sm:w-1/2 lg:w-4/12 p-2 portfolio-item filter-app">
+              <img src="/images/portfolio-6.jpg" alt="" class="w-full" />
+            </div>
+            <div class="sm:w-1/2 lg:w-4/12 p-2 portfolio-item filter-card">
+              <img src="/images/portfolio-7.jpg" alt="" class="w-full" />
+            </div>
+            <div class="sm:w-1/2 lg:w-4/12 p-2 portfolio-item filter-web">
+              <img src="/images/portfolio-8.jpg" alt="" class="w-full" />
+            </div>
+            <div class="sm:w-1/2 lg:w-4/12 p-2 portfolio-item filter-app">
+              <img src="/images/portfolio-9.jpg" alt="" class="w-full" />
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
+    <script src="/js/main.js"></script>
     <!---Plugins and plugin config-->
     <script src="/plugins/js/aos.js"></script>
     <script src="/plugins/js/swiper-bundle.min.js"></script>

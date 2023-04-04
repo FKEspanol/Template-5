@@ -643,6 +643,10 @@ video {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .items-center {
   align-items: center;
 }
@@ -702,8 +706,8 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\/images\/gadget1\.jpg\'\)\] {
-  background-image: url('/images/gadget1.jpg');
+.bg-\[url\(\'\/images\/gadget2\.jpg\'\)\] {
+  background-image: url('/images/gadget2.jpg');
 }
 
 .bg-\[url\(\'\/images\/hero-img1\.jpg\'\)\] {
@@ -741,6 +745,10 @@ video {
 
 .bg-center {
   background-position: center;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .px-8 {
@@ -864,8 +872,6 @@ video {
 html {
   font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
-  /* For Safari */
-  scroll-behavior: cubic-bezier(0.83, 0.2, 0.71, 0.06);
 }
 
 .my-container {
@@ -892,6 +898,7 @@ html {
 
 .my-btn {
   display: inline-flex;
+  cursor: pointer;
   align-items: center;
   justify-content: center;
   border-radius: 0.375rem;
@@ -963,12 +970,20 @@ html {
 }
 
 @media (min-width: 640px) {
+  .sm\:w-1\/2 {
+    width: 50%;
+  }
+
   .sm\:w-3\/5 {
     width: 60%;
   }
 
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:justify-start {
+    justify-content: flex-start;
   }
 }
 
@@ -1028,6 +1043,10 @@ html {
 
   .lg\:w-1\/2 {
     width: 50%;
+  }
+
+  .lg\:w-4\/12 {
+    width: 33.333333%;
   }
 
   .lg\:grid-cols-3 {
