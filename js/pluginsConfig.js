@@ -4,7 +4,7 @@ AOS.init({
   duration: 2000,
 });
 
-// Isotope configuration ---------------------------------/*
+// Isotope filter configuration on Portfolio section ---------------------------------/*
 const portfolioContainer = document.querySelector(".portfolio-container");
 var iso = new Isotope(portfolioContainer, {
   itemSelector: ".portfolio-item",
@@ -13,6 +13,10 @@ var iso = new Isotope(portfolioContainer, {
 var portfolioFilters = document.getElementById("portfolio-filters");
 portfolioFilters.addEventListener("click", function (event) {
   event.preventDefault();
+  selectClass("filter-btn").forEach((btn) =>
+    btn.classList.remove("my-btn-primary")
+  );
+  event.target.classList.add("my-btn-primary");
   iso.arrange({ filter: event.target.getAttribute("data-filter") });
 });
 
