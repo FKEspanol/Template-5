@@ -59,14 +59,6 @@
     },
     false
   );
-  // portfolioFilters.addEventListener("click", function (event) {
-  //   event.preventDefault();
-  //   select(".filter-btn", true).forEach((btn) => {
-  //     btn.classList.remove("my-btn-primary");
-  //   });
-  //   event.target.classList.add("my-btn-primary");
-  //   iso.arrange({ filter: event.target.getAttribute("data-filter") });
-  // });
 
   // swiper js configuration ---------------------------------/*
   new Swiper(".swiper", {
