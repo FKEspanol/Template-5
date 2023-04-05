@@ -34,13 +34,17 @@
     }
   };
 
-  // AOS configuration ---------------------------------/*
+  /**
+   * AOS configuration
+   */
   AOS.init({
     once: true,
     duration: 2000,
   });
 
-  // Isotope filter configuration on Portfolio section ---------------------------------/*
+  /**
+   * Isotope filter configuration on Portfolio section
+   */
   const portfolioContainer = select(".portfolio-container");
   var iso = new Isotope(portfolioContainer, {
     itemSelector: ".portfolio-item",
@@ -48,19 +52,21 @@
 
   on(
     "click",
-    "#portfolio-filters",
+    "#portfolio-filters li.my-btn",
     function (e) {
       e.preventDefault();
       select(".filter-btn", true).forEach((btn) => {
         btn.classList.remove("my-btn-primary");
       });
-      e.target.classList.add("my-btn-primary");
-      iso.arrange({ filter: e.target.getAttribute("data-filter") });
+      this.classList.add("my-btn-primary");
+      iso.arrange({ filter: this.getAttribute("data-filter") });
     },
-    false
+    true
   );
 
-  // swiper js configuration ---------------------------------/*
+  /**
+   * swiper js configuration
+   */
   new Swiper(".swiper", {
     // Optional parameters
     direction: "horizontal",

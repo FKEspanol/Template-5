@@ -14,7 +14,6 @@
   };
 
   /**
-   *
    * @param {string} event
    * event name
    * @param {string} query
@@ -33,6 +32,9 @@
     }
   };
 
+  /**
+   * scroll to a section with navbar height
+   */
   const navbar = select("header#navbar");
   on(
     "click",
