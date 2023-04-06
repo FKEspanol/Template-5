@@ -49,4 +49,45 @@
     },
     true
   );
+
+  const sidebar = select("#sidebar");
+  const sideNavModal = select("#sideNavModal");
+
+  let isOpen = false;
+  const showSidebar = () => {
+    sideNavModal.classList.remove("hidden");
+    document.body.classList.add("overflow-hidden");
+    isOpen = !isOpen;
+  };
+  on("click", "#menuBtn", function (e) {
+    e.preventDefault();
+    if (!isOpen) {
+      if (document.body.clientWidth >= 384) {
+        showSidebar();
+        sidebar.style.width = "384px";
+      } else {
+        showSidebar();
+        sidebar.style.width = "100%";
+      }
+    }
+  });
+
+  function closeSidebar(targetElement, all = false) {
+    on(
+      "click",
+      targetElement,
+      function (e) {
+        e.preventDefault();
+        sideNavModal.classList.add("hidden");
+        sidebar.style.width = "0px";
+        document.body.classList.remove("overflow-hidden");
+        isOpen = !isOpen;
+      },
+      all
+    );
+  }
+
+  closeSidebar("#closeSidebarBtn");
+  closeSidebar("#sideNavModal");
+  closeSidebar(".sidebar-nav-link", true);
 })();
