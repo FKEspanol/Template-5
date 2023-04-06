@@ -859,6 +859,26 @@ video {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
 
+.bg-\[url\(\'\.\.\/images\/hero-img1\.jpg\'\)\] {
+  background-image: url('../images/hero-img1.jpg');
+}
+
+.bg-\[url\(\'\.\.\/images\/hero-img2\.jpg\'\)\] {
+  background-image: url('../images/hero-img2.jpg');
+}
+
+.bg-\[url\(\'\.\.\/images\/hero-img3\.jpg\'\)\] {
+  background-image: url('../images/hero-img3.jpg');
+}
+
+.bg-\[url\(\'\.\/images\/hero-img1\.jpg\'\)\] {
+  background-image: url('./images/hero-img1.jpg');
+}
+
+.bg-\[url\(\'\.\.\/images\/gadget2\.jpg\'\)\] {
+  background-image: url('../images/gadget2.jpg');
+}
+
 .from-primary {
   --tw-gradient-from: #0d7377 var(--tw-gradient-from-position);
   --tw-gradient-from-position:  ;
