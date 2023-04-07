@@ -32,6 +32,11 @@
     }
   };
 
+  window.addEventListener("load", function () {
+    const loader = select(".ripple-container");
+    loader.style.display = "none";
+  });
+
   /**
    * scroll to a section with navbar height
    */

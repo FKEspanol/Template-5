@@ -12,12 +12,20 @@
       referrerpolicy="no-referrer"
     />
 
+    <link rel="stylesheet" href="./plugins/css/loadingSpinner.css" />
     <link rel="stylesheet" href="./plugins/css/aos.css" />
     <link rel="stylesheet" href="./plugins/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/output.css" />
     <title>Template 4</title>
   </head>
   <body class="bg-white min-h-screen relative">
+    <span class="ripple-container">
+      <div class="lds-ripple">
+        <div class="border-primary border-spacing-1"></div>
+        <div class="border-primary border-spacing-1"></div>
+      </div>
+    </span>
+
     <!------------------------Header---------------------------------->
     <header id="navbar" class="fixed w-full py-5 z-[2] bg-primary shadow-xl">
       <div class="my-container">
@@ -520,11 +528,13 @@
               Blanditiis tenetur molestias.
             </p>
           </div>
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5"
+            data-aos="fade-left"
+          >
             <!-- card 1 -->
             <div
               class="py-12 px-8 border border-b-4 bg-white border-b-primary rounded-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-200"
-              data-aos="zoom-in"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -554,7 +564,6 @@
             <!-- card 2 -->
             <div
               class="py-12 px-8 border border-b-4 bg-white border-b-primary rounded-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-200"
-              data-aos="zoom-in"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -581,7 +590,6 @@
             <!-- card 3 -->
             <div
               class="py-12 px-8 border border-b-4 bg-white border-b-primary rounded-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-200"
-              data-aos="zoom-in"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -608,7 +616,6 @@
             <!-- card- 4 -->
             <div
               class="py-12 px-8 border border-b-4 bg-white border-b-primary rounded-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-200"
-              data-aos="zoom-in"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -637,7 +644,6 @@
             <!--  card 5 -->
             <div
               class="py-12 px-8 border border-b-4 bg-white border-b-primary rounded-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-200"
-              data-aos="zoom-in"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -667,7 +673,6 @@
             <!-- card -6 -->
             <div
               class="py-12 px-8 border border-b-4 bg-white border-b-primary rounded-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-200"
-              data-aos="zoom-in"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
