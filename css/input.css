@@ -34,3 +34,7 @@ html {
 .swiper-scrollbar-drag {
   @apply bg-primary;
 }
+
+.my-color {
+  fill: #fff;
+}
