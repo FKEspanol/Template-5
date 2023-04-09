@@ -43,7 +43,7 @@
   });
 
   /**
-   * dynamic header navbar onscroll and scrollY position
+   * dynamic navbar on scroll and scrollY position after load
    */
 
   const navbar = select("header#navbar");
@@ -136,7 +136,10 @@
     );
   };
 
+  // close sidebar when clicking on close button
   closeSidebar("#closeSidebarBtn");
+  // close sidebar when clicking on modal
   closeSidebar("#sideNavModal");
+  // close sidebar when clicking on navigation links
   closeSidebar(".sidebar-nav-link", true);
 })();
