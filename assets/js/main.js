@@ -10,7 +10,9 @@
     query = query.trim();
     if (all) {
       return [...document.querySelectorAll(query)];
-    } else return document.querySelector(query);
+    } else {
+      return document.querySelector(query);
+    }
   };
 
   /**
@@ -64,7 +66,7 @@
     document.body.classList.add("overflow-hidden");
     isOpen = !isOpen;
   };
-  on("click", "#menuBtn", function (e) {
+  on("click", "#menuBtn", (e) => {
     e.preventDefault();
     if (!isOpen) {
       if (document.body.clientWidth >= 384) {
@@ -77,7 +79,7 @@
     }
   });
 
-  function closeSidebar(targetElement, all = false) {
+  const closeSidebar = (targetElement, all = false) => {
     on(
       "click",
       targetElement,
@@ -90,7 +92,7 @@
       },
       all
     );
-  }
+  };
 
   closeSidebar("#closeSidebarBtn");
   closeSidebar("#sideNavModal");

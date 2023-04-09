@@ -1,7 +1,7 @@
 {
   "scripts": {
     "sass": "sass --watch scss:css",
-    "tailwind": "npx tailwindcss -i ./css/input.css -o ./css/output.css --watch"
+    "tailwind": "npx tailwindcss -i ./assets/css/input.css -o ./assets/css/output.css --watch"
   },
   "devDependencies": {
     "tailwindcss": "^3.3.1"

@@ -12,10 +12,10 @@
       referrerpolicy="no-referrer"
     />
 
-    <link rel="stylesheet" href="./plugins/css/loadingSpinner.css" />
-    <link rel="stylesheet" href="./plugins/css/aos.css" />
-    <link rel="stylesheet" href="./plugins/css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./css/output.css" />
+    <link rel="stylesheet" href="./assets/vendors/css/loadingSpinner.css" />
+    <link rel="stylesheet" href="./assets/vendors/css/aos.css" />
+    <link rel="stylesheet" href="./assets/vendors/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/output.css" />
     <title>Template 4</title>
   </head>
   <body class="bg-white min-h-screen w-screen absolute">
@@ -27,7 +27,7 @@
     </span>
 
     <!------------------------Header---------------------------------->
-    <header id="navbar" class="fixed w-full py-5 z-[2] bg-primary shadow-xl">
+    <header id="navbar" class="fixed w-full py-5 z-[2] bg-secondary shadow-xl">
       <div class="my-container">
         <div class="flex justify-between items-center">
           <!-- ------------------brand/logo----------------- -->
@@ -288,10 +288,10 @@
 
     <!-- -------------------Main---------------------------------- -->
 
-    <main class="w-full">
+    <main>
       <!-- --------------Hero Section ------------------------------ -->
       <!-- Slider main container -->
-      <section id="home" class="swiper w-full h-[85vh]">
+      <section id="home" class="swiper w-full h-screen">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
@@ -389,17 +389,13 @@
       <!-- -------------------End of hero section-------------------------- -->
 
       <!-- -------------------Start of about section------------------------ -->
-      <section
-        id="about"
-        class="block w-full relative bg-gradient-to-b from-primary to-secondary"
-      >
+      <section id="about" class="block w-full relative bg-secondary">
         <div class="my-container pt-6 lg:pt-0 2xl:relative">
           <!-- about side image -->
           <div
-            class="block h-[50vh] w-full bg-[url('../images/gadget2.jpg')] bg-cover bg-center lg:absolute lg:top-0 lg:right-0 lg:w-1/2 lg:h-full"
+            class="block h-[50vh] w-full bg-[url('../images/about-1.jpg')] bg-cover bg-center lg:absolute lg:top-0 lg:right-0 lg:w-1/2 lg:h-full"
           ></div>
           <div class="w-full lg:w-1/2 lg:pr-10 py-20">
-            <!-- about section header -->
             <div class="mb-8">
               <h2
                 class="text-2xl md:text-3xl text-white uppercase font-bold mb-3 after:block after:mt-2 after:w-10 after:h-1 after:bg-primary-lighten"
@@ -411,7 +407,6 @@
                 Blanditiis tenetur molestias.
               </p>
             </div>
-            <!--end of about section header -->
 
             <p class="text-sm lg:text-base mb-8 text-white leading-6">
               <strong>Lorem ipsum dolor</strong> sit amet consectetur
@@ -686,11 +681,11 @@
 
       <!-- --------------------------------Start of portfolio section------------ -->
 
-      <section id="portfolio" class="py-20">
+      <section id="portfolio" class="py-20 bg-dark">
         <div class="my-container">
           <div class="mb-8">
             <h2
-              class="text-2xl md:text-3xl text-neutral-700 uppercase font-bold mb-3 after:block after:mt-2 after:w-10 after:h-1 after:bg-primary-lighten"
+              class="text-2xl md:text-3xl uppercase font-bold mb-3 after:block after:mt-2 after:w-10 after:h-1 after:bg-primary-lighten"
             >
               Portfolio
             </h2>
@@ -704,40 +699,91 @@
               <li class="filter-btn my-btn my-btn-primary" data-filter="*">
                 All
               </li>
-              <li class="filter-btn my-btn" data-filter=".filter-app">App</li>
-              <li class="filter-btn my-btn" data-filter=".filter-card">Card</li>
-              <li class="filter-btn my-btn" data-filter=".filter-web">Web</li>
+              <li
+                class="filter-btn my-btn bg-dark-lighten"
+                data-filter=".filter-app"
+              >
+                App
+              </li>
+              <li
+                class="filter-btn my-btn bg-dark-lighten"
+                data-filter=".filter-card"
+              >
+                Card
+              </li>
+              <li
+                class="filter-btn my-btn bg-dark-lighten"
+                data-filter=".filter-web"
+              >
+                Web
+              </li>
             </ul>
           </div>
 
           <!-- portfolio grid container -->
           <div class="flex flex-wrap portfolio-container">
             <div class="sm:w-1/2 lg:w-4/12 p-2 portfolio-item filter-app">
-              <img src="./images/portfolio-1.jpg" alt="" class="w-full" />
+              <img
+                src="./assets/images/portfolio-1.jpg"
+                alt=""
+                class="w-full"
+              />
             </div>
             <div class="sm:w-1/2 lg:w-4/12 p-2 portfolio-item filter-web">
-              <img src="./images/portfolio-2.jpg" alt="" class="w-full" />
+              <img
+                src="./assets/images/portfolio-2.jpg"
+                alt=""
+                class="w-full"
+              />
             </div>
             <div class="sm:w-1/2 lg:w-4/12 p-2 portfolio-item filter-card">
-              <img src="./images/portfolio-3.jpg" alt="" class="w-full" />
+              <img
+                src="./assets/images/portfolio-3.jpg"
+                alt=""
+                class="w-full"
+              />
             </div>
             <div class="sm:w-1/2 lg:w-4/12 p-2 portfolio-item filter-web">
-              <img src="./images/portfolio-4.jpg" alt="" class="w-full" />
+              <img
+                src="./assets/images/portfolio-4.jpg"
+                alt=""
+                class="w-full"
+              />
             </div>
             <div class="sm:w-1/2 lg:w-4/12 p-2 portfolio-item filter-card">
-              <img src="./images/portfolio-5.jpg" alt="" class="w-full" />
+              <img
+                src="./assets/images/portfolio-5.jpg"
+                alt=""
+                class="w-full"
+              />
             </div>
             <div class="sm:w-1/2 lg:w-4/12 p-2 portfolio-item filter-app">
-              <img src="./images/portfolio-6.jpg" alt="" class="w-full" />
+              <img
+                src="./assets/images/portfolio-6.jpg"
+                alt=""
+                class="w-full"
+              />
             </div>
             <div class="sm:w-1/2 lg:w-4/12 p-2 portfolio-item filter-card">
-              <img src="./images/portfolio-7.jpg" alt="" class="w-full" />
+              <img
+                src="./assets/images/portfolio-7.jpg"
+                alt=""
+                class="w-full"
+              />
             </div>
             <div class="sm:w-1/2 lg:w-4/12 p-2 portfolio-item filter-web">
-              <img src="./images/portfolio-8.jpg" alt="" class="w-full" />
+              <img
+                src="./assets/images/portfolio-8.jpg"
+                alt=""
+                class="w-full"
+              />
             </div>
             <div class="sm:w-1/2 lg:w-4/12 p-2 portfolio-item filter-app">
-              <img src="./images/portfolio-9.jpg" alt="" class="w-full" />
+              <img
+                src="./assets/images/portfolio-9.jpg"
+                alt=""
+                class="w-full"
+              />
             </div>
           </div>
         </div>
@@ -763,7 +809,7 @@
             <div class="group relative block bg-black h-fit">
               <img
                 alt="Developer"
-                src="./images/team-1.jpg"
+                src="./assets/images/team-1.jpg"
                 class="w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
               />
 
@@ -810,7 +856,7 @@
             <div class="group relative block bg-black h-fit">
               <img
                 alt="Developer"
-                src="./images/team-2.jpg"
+                src="./assets/images/team-2.jpg"
                 class="w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
               />
 
@@ -857,7 +903,7 @@
             <div class="group relative block bg-black h-fit">
               <img
                 alt="Developer"
-                src="./images/team-3.jpg"
+                src="./assets/images/team-3.jpg"
                 class="w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
               />
 
@@ -920,7 +966,7 @@
             </p>
           </div>
         </div>
-        <div class="h-[500px] w-full">
+        <div class="h-[500px] w-full mb-20">
           <div id="google-maps-canvas" class="h-full w-full max-w-full">
             <iframe
               style="height: 100%; width: 100%; border: 0"
@@ -936,7 +982,7 @@
             }
           </style>
         </div>
-        <div class="my-container pt-20 lg:flex">
+        <div class="my-container lg:flex">
           <div class="pr-8 lg:w-1/2">
             <div class="flex gap-x-5 mb-20">
               <svg
@@ -1043,11 +1089,11 @@
     </main>
 
     <!-- ------------------------Footer------------------------ -->
-    <footer class="bg-primary">
+    <footer class="bg-secondary">
       <div class="my-container py-20">
         <div class="lg:grid grid-cols-3 gap-x-5">
           <div class="col-start-1 col-end-2 pr-5 mb-10 lg:mb-0">
-            <h2 class="text-2xl text-white uppercase font-bold mb-3">
+            <h2 class="text-2xl text-primary uppercase font-bold mb-3">
               Hello World
             </h2>
             <p class="text-sm text-white leading-7 mb-3">
@@ -1075,47 +1121,101 @@
           <div class="col-start-2 col-end-4">
             <div class="sm:grid grid-cols-3">
               <div class="block mb-8 sm:mb-0">
-                <h3 class="text-lg text-white uppercase mb-5 font-semibold">
+                <h3 class="text-lg text-primary uppercase mb-5 font-semibold">
                   Useful Links
                 </h3>
                 <ul class="text-white leading-10">
-                  <li><a href="#home" class="text-sm">Go To Home</a></li>
                   <li>
-                    <a href="#about" class="text-sm">About Hello World</a>
+                    <a href="#home" class="text-sm hover:text-primary"
+                      >Go To Home</a
+                    >
                   </li>
-                  <li><a href="#about" class="text-sm">Our Services</a></li>
-                  <li><a href="#about" class="text-sm">See Our Projects</a></li>
-                  <li><a href="#about" class="text-sm">Team</a></li>
-                  <li><a href="#about" class="text-sm">Contact Us</a></li>
+                  <li>
+                    <a href="#about" class="text-sm hover:text-primary"
+                      >About Hello World</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#about" class="text-sm hover:text-primary"
+                      >Our Services</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#about" class="text-sm hover:text-primary"
+                      >See Our Projects</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#about" class="text-sm hover:text-primary">Team</a>
+                  </li>
+                  <li>
+                    <a href="#about" class="text-sm hover:text-primary"
+                      >Contact Us</a
+                    >
+                  </li>
                 </ul>
               </div>
               <div class="block mb-8 sm:mb-0">
-                <h3 class="text-lg text-white uppercase mb-5 font-semibold">
+                <h3 class="text-lg text-primary uppercase mb-5 font-semibold">
                   Our Services
                 </h3>
                 <ul class="text-white leading-10">
-                  <li><a href="#home" class="text-sm">Web Design</a></li>
-                  <li><a href="#about" class="text-sm">Web Development</a></li>
                   <li>
-                    <a href="#about" class="text-sm">Product Management</a>
+                    <a href="#home" class="text-sm hover:text-primary"
+                      >Web Design</a
+                    >
                   </li>
-                  <li><a href="#about" class="text-sm">Marketing</a></li>
-                  <li><a href="#about" class="text-sm">Graphic Design </a></li>
+                  <li>
+                    <a href="#about" class="text-sm hover:text-primary"
+                      >Web Development</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#about" class="text-sm hover:text-primary"
+                      >Product Management</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#about" class="text-sm hover:text-primary"
+                      >Marketing</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#about" class="text-sm hover:text-primary"
+                      >Graphic Design
+                    </a>
+                  </li>
                 </ul>
               </div>
               <div class="block mb-8 sm:mb-0">
-                <h3 class="text-lg text-white uppercase mb-5 font-semibold">
+                <h3 class="text-lg text-primary uppercase mb-5 font-semibold">
                   Contact Us
                 </h3>
                 <ul class="text-white leading-10">
-                  <li><a href="#home" class="text-sm">A234 Jones Street</a></li>
-                  <li><a href="#about" class="text-sm">Chicago, Il</a></li>
-                  <li><a href="#about" class="text-sm">United States</a></li>
                   <li>
-                    <a href="#about" class="text-sm">+1 3333 4545453 67 </a>
+                    <a href="#home" class="text-sm hover:text-primary"
+                      >A234 Jones Street</a
+                    >
                   </li>
                   <li>
-                    <a href="#about" class="text-sm">info@example.com </a>
+                    <a href="#about" class="text-sm hover:text-primary"
+                      >Chicago, Il</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#about" class="text-sm hover:text-primary"
+                      >United States</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#about" class="text-sm hover:text-primary"
+                      >+1 3333 4545453 67
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#about" class="text-sm hover:text-primary"
+                      >info@example.com
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -1131,11 +1231,11 @@
       </div>
     </footer>
 
-    <script src="./js/main.js"></script>
     <!---Plugins and plugin config-->
-    <script src="./plugins/js/aos.js"></script>
-    <script src="./plugins/js/swiper-bundle.min.js"></script>
-    <script src="./plugins/js/isotope.pkgd.min.js"></script>
-    <script src="./js/pluginsConfig.js"></script>
+    <script src="./assets/vendors/js/aos.js"></script>
+    <script src="./assets/vendors/js/swiper-bundle.min.js"></script>
+    <script src="./assets/vendors/js/isotope.pkgd.min.js"></script>
+    <script src="./assets/js/pluginsConfig.js"></script>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>

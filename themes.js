@@ -37,8 +37,23 @@ const theme3 = {
   },
 };
 
+const theme4 = {
+  backgroundColor: {
+    primary: "#ff9203",
+    secondary: "#222a35",
+  },
+
+  colors: {
+    primary: "#ff9203",
+    secondary: "#0ff9203",
+    "primary-lighten": "#ffa202",
+    "dark-lighten": "#3a485b",
+  },
+};
+
 module.exports = {
   theme1,
   theme2,
   theme3,
+  theme4,
 };
