@@ -34,29 +34,71 @@
     }
   };
 
+  /**
+   *  loading animattion ripple effect before web page is loaded
+   */
   window.addEventListener("load", function () {
     const loader = select(".ripple-container");
     loader.style.display = "none";
   });
 
   /**
+   * dynamic header navbar onscroll and scrollY position
+   */
+
+  const navbar = select("header#navbar");
+  window.onscroll = (e) => {
+    e.preventDefault();
+
+    if (window.scrollY >= 100) {
+      navbar.classList.remove("py-10");
+      navbar.classList.add("py-5", "bg-secondary", "shadow-xl");
+    } else {
+      navbar.classList.remove("py-5", "bg-secondary", "shadow-xl");
+      navbar.classList.add("py-10");
+    }
+  };
+
+  window.onload = (e) => {
+    e.preventDefault();
+    if (window.scrollY >= 100) {
+      navbar.classList.remove("py-10");
+      navbar.classList.add("py-5", "bg-secondary", "shadow-xl");
+    }
+  };
+
+  /**
    * scroll to a section with navbar height
    */
-  const navbar = select("header#navbar");
+
   on(
     "click",
     ".nav-link",
     function (e) {
       e.preventDefault();
       const sectionID = this.getAttribute("href").replace("#", "");
-      window.scrollTo({
-        top: document.getElementById(sectionID).offsetTop - navbar.offsetHeight,
-        behavior: "smooth",
-      });
+      // subtract 40px to the header navbar height when you scrolled down to a section from the very top of the page, because the navbar height is dependent on the default padding given in the header element which in this case is 40px more than when you scroll down to a section, you can remove the 40 px in the if statement below and click a link to a section from the very top of the page to test what's going on
+      if (window.scrollY <= 100) {
+        window.scrollTo({
+          top:
+            document.getElementById(sectionID).offsetTop -
+            (navbar.offsetHeight - 40),
+          behavior: "smooth",
+        });
+      } else {
+        window.scrollTo({
+          top:
+            document.getElementById(sectionID).offsetTop - navbar.offsetHeight,
+          behavior: "smooth",
+        });
+      }
     },
     true
   );
 
+  /**
+   * apen and close sidebar on smaller screens
+   */
   const sidebar = select("#sidebar");
   const sideNavModal = select("#sideNavModal");
 

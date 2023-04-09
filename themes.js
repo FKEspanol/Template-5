@@ -45,7 +45,7 @@ const theme4 = {
 
   colors: {
     primary: "#ff9203",
-    secondary: "#0ff9203",
+    secondary: "#222a35",
     "primary-lighten": "#ffa202",
     "dark-lighten": "#3a485b",
   },
