@@ -57,7 +57,9 @@
       e.preventDefault();
       select(".filter-btn", true).forEach((btn) => {
         btn.classList.remove("my-btn-primary");
+        btn.classList.add("bg-dark-lighten");
       });
+      this.classList.remove("bg-dark-lighten");
       this.classList.add("my-btn-primary");
       iso.arrange({ filter: this.getAttribute("data-filter") });
     },
