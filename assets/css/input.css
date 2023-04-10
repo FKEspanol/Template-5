@@ -38,3 +38,7 @@ html {
 .bg-dark {
   @apply bg-secondary text-white;
 }
+
+.active-link {
+  @apply text-primary;
+}
