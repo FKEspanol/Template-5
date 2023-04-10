@@ -19,13 +19,6 @@
     <title>Template 4</title>
   </head>
   <body class="bg-white min-h-screen min-w-full">
-    <span class="ripple-container">
-      <div class="lds-ripple">
-        <div class="border-primary border-spacing-1"></div>
-        <div class="border-primary border-spacing-1"></div>
-      </div>
-    </span>
-
     <!------------------------Header---------------------------------->
     <header
       id="navbar"
@@ -84,12 +77,12 @@
                 >Contact</a
               >
             </li>
-            <button
-              href=""
-              class="my-btn my-btn-primary xl:ml-8 border border-gray-200"
+            <a
+              href="#about"
+              class="my-btn my-btn-primary xl:ml-8 border border-gray-200 nav-link"
             >
               Get Started
-            </button>
+            </a>
           </ul>
           <svg
             id="menuBtn"
@@ -319,12 +312,15 @@
                     sit amet, consectetur adipisicing elit. Sapiente quaerat ut
                     sed ea fugiat sit! adipisicing elit.
                   </p>
-                  <button class="my-btn my-btn-primary">Get Started</button>
-                  <button
-                    class="ml-3 my-btn text-white border border-primary hover:bg-primary"
+                  <a href="#about" class="my-btn my-btn-primary nav-link"
+                    >Get Started</a
+                  >
+                  <a
+                    href="#about"
+                    class="ml-3 my-btn text-white border border-primary hover:bg-primary nav-link"
                   >
                     Get Started
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -350,12 +346,15 @@
                     sit amet, consectetur adipisicing elit. Sapiente quaerat ut
                     sed ea fugiat sit! adipisicing elit.
                   </p>
-                  <button class="my-btn my-btn-primary">Get Started</button>
-                  <button
-                    class="ml-3 my-btn text-white border border-primary hover:bg-primary"
+                  <a href="#about" class="my-btn my-btn-primary nav-link"
+                    >Get Started</a
+                  >
+                  <a
+                    href="#about"
+                    class="ml-3 my-btn text-white border border-primary hover:bg-primary nav-link"
                   >
                     Get Started
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -381,12 +380,15 @@
                     sit amet, consectetur adipisicing elit. Sapiente quaerat ut
                     sed ea fugiat sit! adipisicing elit.
                   </p>
-                  <button class="my-btn my-btn-primary">Get Started</button>
-                  <button
-                    class="ml-3 my-btn text-white border border-primary hover:bg-primary"
+                  <a href="#about" class="my-btn my-btn-primary nav-link"
+                    >Get Started</a
+                  >
+                  <a
+                    href="#about"
+                    class="ml-3 my-btn text-white border border-primary hover:bg-primary nav-link"
                   >
                     Get Started
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -973,7 +975,7 @@
       <section
         class="py-10 md:py-20 relative bg-[url('../images/review.jpg')] bg-cover bg-center bg-fixed"
       >
-        <div class="absolute inset-0 bg-secondary opacity-70"></div>
+        <div class="absolute inset-0 bg-gray-600 opacity-70"></div>
         <div class="my-container">
           <!-- Slider main container -->
           <div class="swiper">
@@ -991,7 +993,7 @@
                     Jessica Smith
                   </h3>
                   <h4 class="text-white mb-5">Designer</h4>
-                  <p class="text-white text-lg">
+                  <p class="text-white text-lg italic">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Sed deleniti minus cum quod veniam officiis quibusdam. Odio
                     dolore quo itaque nesciunt maxime suscipit quas consectetur,
@@ -1007,7 +1009,7 @@
                   />
                   <h3 class="text-white text-xl font-semibold">Tony Dane</h3>
                   <h4 class="text-white mb-5">Freelancer</h4>
-                  <p class="text-white text-lg">
+                  <p class="text-white text-lg italic">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Sed deleniti minus cum quod veniam officiis quibusdam. Odio
                     dolore quo itaque nesciunt maxime suscipit quas consectetur,
@@ -1023,7 +1025,7 @@
                   />
                   <h3 class="text-white text-xl font-semibold">Aron Sanchez</h3>
                   <h4 class="text-white mb-5">Web Developer</h4>
-                  <p class="text-white text-lg">
+                  <p class="text-white text-lg italic">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Sed deleniti minus cum quod veniam officiis quibusdam. Odio
                     dolore quo itaque nesciunt maxime suscipit quas consectetur,
@@ -1039,7 +1041,7 @@
                   />
                   <h3 class="text-white text-xl font-semibold">Dave Larson</h3>
                   <h4 class="text-white mb-5">Web Developer</h4>
-                  <p class="text-white text-lg">
+                  <p class="text-white text-lg italic">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Sed deleniti minus cum quod veniam officiis quibusdam. Odio
                     dolore quo itaque nesciunt maxime suscipit quas consectetur,
@@ -1055,7 +1057,7 @@
                   />
                   <h3 class="text-white text-xl font-semibold">Kevin Quin</h3>
                   <h4 class="text-white mb-5">Web Developer</h4>
-                  <p class="text-white text-lg">
+                  <p class="text-white text-lg italic">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Sed deleniti minus cum quod veniam officiis quibusdam. Odio
                     dolore quo itaque nesciunt maxime suscipit quas consectetur,
@@ -1350,10 +1352,18 @@
       </div>
     </footer>
 
+    <!-- ----------Loader--------------------- -->
+    <span class="ripple-container bg-secondary">
+      <div class="lds-ripple">
+        <div class="border-primary border-4"></div>
+        <div class="border-primary border-4"></div>
+      </div>
+    </span>
     <!---Plugins and plugin config-->
     <script src="./assets/vendors/js/aos.js"></script>
     <script src="./assets/vendors/js/swiper-bundle.min.js"></script>
     <script src="./assets/vendors/js/isotope.pkgd.min.js"></script>
+    <script src="./assets/vendors/js/imagesloaded.pkgd.min.js"></script>
     <script src="./assets/js/pluginsConfig.js"></script>
     <script src="./assets/js/main.js"></script>
   </body>

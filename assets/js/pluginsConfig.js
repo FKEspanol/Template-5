@@ -48,6 +48,11 @@
   const portfolioContainer = select(".portfolio-container");
   var iso = new Isotope(portfolioContainer, {
     itemSelector: ".portfolio-item",
+    layoutMode: "masonry",
+  });
+
+  imagesLoaded(portfolioContainer, function () {
+    iso.layout();
   });
 
   on(
