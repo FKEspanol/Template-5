@@ -80,7 +80,7 @@
     loop: true,
 
     autoplay: {
-      delay: 3000,
+      delay: 4000,
       disableOnInteraction: false,
     },
 
@@ -102,5 +102,12 @@
       draggable: true,
       dragClass: "swiper-scrollbar-drag",
     },
+  });
+
+  /**
+   * Initiate portfolio lightbox
+   */
+  GLightbox({
+    selector: ".portfolio-lightbox",
   });
 })();
